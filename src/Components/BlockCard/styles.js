@@ -1,0 +1,245 @@
+import styled from "styled-components";
+
+//usando container page compnetes
+export const TestsSectorPage = styled.div`
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(${({ background }) => background});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px 0 10px 0;
+  background-color: var(--colorDefault);
+  @media (max-width: 1050px) {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+`;
+export const CardTxt = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 120px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  @media (max-width: 1050px) {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+`;
+export const SectorsTexts = styled.span`
+  width: 100%;
+  max-width: 100%;
+  /* margin-left: 16%; */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+
+  letter-spacing: -0.03em;
+
+  text-align: flex-start;
+  color: var(--azulpadrao);
+
+  @media (max-width: 1250px) {
+    margin-left: 0;
+  }
+  @media (max-width: 950px) {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+`;
+export const Paragraph = styled.span`
+  width: 100%;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 51%;
+  /* margin-left: 16%; */
+  padding: 10px 0px 20px 0px;
+  color: var(--colorBclak);
+  font-weight: 20;
+  text-align: flex-start;
+  @media (max-width: 1250px) {
+    margin-left: 0;
+  }
+  @media (max-width: 950px) {
+    padding: 20px;
+    width: 100%;
+    max-width: 98%;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+  strong {
+    color: #000;
+  }
+`;
+export const SectorsCards = styled.div`
+  /* width: 100%;
+  max-width: 60%;*/
+  width: 100%;
+  max-width: 1200px;
+  /* background-color: red; */
+  height: auto;
+  min-height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 1050px) {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+export const Card = styled.div`
+  width: 100%;
+  /* margin-right: 50px; */
+  max-width: 270px;
+  height: 300px;
+  min-height: 300px;
+  /* background-color: blue; */
+
+  /* width: 100%;
+  max-width: 300px;
+  height: 300px;
+  min-height: 300px;
+  background-color: transparent; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px;
+  /* box-shadow: 0px 0px 50px #d2d2d289; */
+  /* margin: 5px; */
+  /* box-shadow: rgb(144 131 131 / 54%) 0px 0px 50px; */
+  @media (max-width: 1050px) {
+    width: 100%;
+    max-width: 270px;
+    height: 300px;
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+  }
+`;
+export const SectorImgCard = styled.div`
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  height: 70px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #c3c4c4; */
+`;
+
+export const CardImages = styled.img`
+  width: 65px;
+  height: 65px;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (max-width: 1050px) {
+    width: 100%;
+    max-width: 55px;
+  }
+`;
+
+export const Hrs = styled.hr`
+  width: 100%;
+  max-width: 30px;
+  height: 4px;
+  border: none;
+  border-style: none;
+  /* background-color: #c3c4c4; */
+  margin-top: 30px;
+`;
+
+export const CardFullTitle = styled.div`
+  font-family: "Plus Jakarta Sans";
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+
+  text-align: center;
+`;
+export const CardTitle = styled.span`
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 5px 5px 5px;
+  color: var(--azulpadrao);
+  text-align: center;
+
+  @media (max-width: 1050px) {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    padding: 1px;
+  }
+`;
+
+export const CardParagraph = styled.span`
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  width: 100%;
+  max-width: 76%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 5px 5px 5px;
+  color: #2f2f2f;
+
+  @media (max-width: 950px) {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    padding: 1px;
+  }
+`;

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Kirang+Haerang&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@100;400;500;600;900&family=Roboto:wght@400;700;900&family=Zen+Dots&display=swap"); */
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  /* display: grid; */
+  align-items: center;
+  justify-items: center;
+
+  --colorSlider: ##434343;
+  --bgpadrao: #fafbff;
+  --azulpadrao: #1951a0;
+  --colorAzulclaro: #25a2ed;
+  --colorroxo: #48328d;
+  --bgAmarelo: #ffaf23;
+  --colorlaranja: #ff731e;
+  --colorVermelhor: #cc181e;
+  --colorVerde: #2d7a21;
+  --colorVerdeescuro: #114c38;
+  --colortextverde: #66b031;
+  --colorcinza: #f3f3f3;
+  --colorBordo: #bf2383;
+  --colorDefault: #fff;
+  --colorBclak: #4d4d4d;
+  --blackdefault: #000;
+  --colorTxtNav: #676767;
+  --colorCategory: #f5f5f5;
+  --colorTexts: #2f2f2f;
+  --colorFooter: #238ec2;
+  --Txth2: linear-gradient(90deg, #ff008e, #ffcd1e);
+  --horizontal-gradient: linear-gradient(90deg, #d1006d 0%, #841951 100%) 0% 0%
+    no-repeat padding-box;
+  --pentest: linear-gradient(90deg, #ff0c88 0%, #ff403e 100%);
+  background-color: var(--bg);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  justify-content: center;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
