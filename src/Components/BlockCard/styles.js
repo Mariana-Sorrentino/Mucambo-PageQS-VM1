@@ -24,6 +24,8 @@ export const TestsSectorPage = styled.div`
     max-width: 100%;
     flex-wrap: wrap;
     margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 `;
 export const CardTxt = styled.div`
@@ -59,6 +61,7 @@ export const SectorsTexts = styled.span`
 
   @media (max-width: 1250px) {
     margin-left: 0;
+    font-size: 38px;
   }
 
   @media (max-width: 950px) {
@@ -66,8 +69,13 @@ export const SectorsTexts = styled.span`
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 0;
+    font-size: 34px;
   }
 `;
 export const Paragraph = styled.span`
@@ -86,6 +94,7 @@ export const Paragraph = styled.span`
 
   @media (max-width: 1250px) {
     margin-left: 0;
+    font-size: 16px;
   }
 
   @media (max-width: 950px) {
@@ -93,7 +102,6 @@ export const Paragraph = styled.span`
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
-    font-size: 16px;
   }
   strong {
     color: #000;
@@ -110,9 +118,7 @@ export const SectorsCards = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 1050px) {
-    width: 100%;
-    max-width: 100%;
+  @media (max-width: 720px) {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -136,8 +142,6 @@ export const Card = styled.div`
   
   @media (max-width: 1050px) {
     width: 100%;
-    max-width: 270px;
-    height: 300px;
     flex-wrap: wrap;
     margin-top: 10px;
   }

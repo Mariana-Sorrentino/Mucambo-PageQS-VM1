@@ -13,6 +13,7 @@ export const SlidercContainerHome = styled.div`
   overflow: hidden;
   background-color: #ededed;
   /* background-color: #0070f3; */
+
   @media (max-width: 1050px) {
     height: auto;
     max-height: auto;
@@ -21,6 +22,18 @@ export const SlidercContainerHome = styled.div`
     /* background-color: #ccc; */
     /* display: none; */
   }
+
+  @media (max-width: 550px) {
+    min-height: 950px;
+  }
+
+  @media (max-width: 422px) {
+    min-height: 950px;
+  }
+/* 
+  @media (max-width: 407px) {
+    min-height: 1000px;
+  } */
 `;
 
 const activeBgSlider = css`
@@ -63,6 +76,7 @@ export const SlidesHome = styled.div`
   flex-wrap: wrap;
   ${({ active }) => (active == true ? activeBgSlider : inactiveBgSlider)}
   /* background-color:blue; */
+
   @media (max-width: 1050px) {
     /* flex-direction: column; */
     height: auto;
@@ -82,6 +96,7 @@ export const SliderGroupImg = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   background-color: #ffffff;
   /* #ffffff */
   border-left: 8px solid ${({ color }) => color};
@@ -100,9 +115,28 @@ export const SliderGroupImg = styled.div`
   @media (max-width: 750px) {
     min-height: 300px;
     width: 100%;
+    max-width: 80%;
+    bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 630px) {
+    bottom: 20px;
+  }
+
+  @media (max-width: 550px) {
     max-width: 95%;
   }
+
+  @media (max-width: 422px) {
+    bottom: 0px;
+    min-height: auto;
+  }
 `;
+
 export const SlideImageHome = styled.img`
   /* width: 100%;
   max-width: 100%;
@@ -121,6 +155,11 @@ export const SlideImageHome = styled.img`
   background-origin: unset;
   overflow: unset;
 
+  @media (max-width: 1050px) {
+    object-fit: cover;
+    overflow: hidden;
+  }
+
   @media (max-width: 950px) {
     object-fit: cover;
     overflow: hidden;
@@ -131,10 +170,6 @@ export const SlideImageHome = styled.img`
     max-width: 100%;
     background-position: center;
     background-size: contain; */
-  }
-  @media (max-width: 1050px) {
-    object-fit: cover;
-    overflow: hidden;
   }
 `;
 
@@ -149,19 +184,24 @@ export const Sliderbloco = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgb(0 0 0 / 50%);
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 450px;
   }
+
   @media (max-width: 950px) {
     width: 100%;
     max-width: 450px;
   }
+
   @media (max-width: 750px) {
     width: 100%;
-    max-width: 90%;
+    /* max-width: 90%; */
+    /* bottom: 150px; */
   }
 `;
+
 export const SliderIcon = styled.div`
   width: 100%;
   max-width: 100px;
@@ -173,6 +213,7 @@ export const SliderIcon = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${({ color }) => color};
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100px;
@@ -191,6 +232,7 @@ export const SliderBTitle = styled.div`
   background-color: transparent;
   font-size: 16px;
   color: var(--colorDefault);
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
@@ -218,6 +260,7 @@ export const SliderGroupText = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #ededed;
+
   @media (max-width: 1050px) {
     height: auto;
     min-height: 500px !important ;
@@ -228,6 +271,7 @@ export const SliderGroupText = styled.div`
     margin-top: 10px;
     /* display: none; */
   }
+
   @media (max-width: 750px) {
     height: auto;
     min-height: 500px !important ;
@@ -251,7 +295,7 @@ export const SliderGroup = styled.div`
   padding: 0 20px 0 20px;
   /* position: static; */
   position: relative;
-  /* background: #1951a0; */
+  /* background: #1951a055; */
   z-index: 1;
   display: flex;
   justify-content: flex-start;
@@ -263,16 +307,26 @@ export const SliderGroup = styled.div`
     margin-top: 10px;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 750px) {
     top: 0;
     height: auto;
     max-height: 100%;
     width: 100%;
-    max-width: 100%;
+    max-width: 85%;
     margin-top: 10px;
   }
 
-  
+  @media (max-width: 650px) {
+    max-width: 95%;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 422px) {
+    margin-bottom: 50px;
+  }
 `;
 export const SliderGroupTitle = styled.div`
   position: relative;
@@ -455,7 +509,6 @@ export const SlideTextParagraph = styled.text`
   }
 
   @media (min-width: 1400px) {
-    font-size: 24px;
     padding-top: 20px;
   }
 
@@ -470,11 +523,19 @@ export const SlideTextParagraph = styled.text`
     padding: 20px 0 0 0;
     left: 0;
     top: 0;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   @media (max-width: 950px) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 14px;
   }
 `;
 
@@ -491,11 +552,16 @@ export const BtnLinkSlider = styled.div`
   width: 100%;
   max-width: 100%;
   bottom: 0;
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
     left: 0;
   }
+
+  /* @media (max-width: 430px) {
+  margin-bottom: 50px;
+  } */
 `;
 export const Butnlink = styled.a`
   width: 100%;
@@ -645,11 +711,12 @@ export const AllDotsHomeSlider = styled.div`
   height: auto;
   position: absolute;
   display: flex;
-  bottom: 5%;
+  bottom: 1%;
   justify-content: center;
   align-items: center;
   z-index: 200;
   height: 50px;
+
   @media (max-width: 1050px) {
     /* background-color: blue; */
     position: absolute;

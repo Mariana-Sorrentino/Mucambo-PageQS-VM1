@@ -64,7 +64,7 @@ export default function BlockSociety() {
               </Icons>
             </CardTag>
             <CardTagTitleItem>
-              <Title>Melhoria continua</Title>
+              <Title>Melhoria contínua</Title>
             </CardTagTitleItem>
           </Cards>
         </SocietyCards>
