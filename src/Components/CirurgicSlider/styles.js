@@ -85,6 +85,7 @@ export const SliderGroupImg = styled.div`
   background-color: #ffffff;
   /* #ffffff */
   border-left: 8px solid ${({ color }) => color};
+
   @media (max-width: 1050px) {
     min-height: 300px;
     width: 100%;
@@ -247,6 +248,7 @@ export const SliderGroup = styled.div`
   height: auto;
   min-height: 80%;
   min-height: 500px;
+  padding: 0 20px 0 20px;
   /* position: static; */
   position: relative;
   /* background: #1951a0; */
@@ -255,6 +257,12 @@ export const SliderGroup = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    margin-top: 10px;
+  }
+
   @media (max-width: 950px) {
     top: 0;
     height: auto;
@@ -263,10 +271,8 @@ export const SliderGroup = styled.div`
     max-width: 100%;
     margin-top: 10px;
   }
-  @media (max-width: 1200px) {
-    max-width: 500px;
-    margin-top: 10px;
-  }
+
+  
 `;
 export const SliderGroupTitle = styled.div`
   position: relative;
@@ -276,6 +282,8 @@ export const SliderGroupTitle = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
+  /* background-color: #ff8080; */
+
   @media (max-width: 950px) {
     left: 0;
   }
@@ -293,35 +301,39 @@ export const SlideTitleHome = styled.span`
   font-size: 80px;
   line-height: 101px;
   padding: 7px 0px 0px 0px;
-  @media (max-width: 1050px) {
-    top: 10px;
-    width: 100%;
-    max-width: 100%;
-    padding: 0px 0 0 10px;
-    left: 0;
-    font-size: 40px;
-  }
-  @media (max-width: 950px) {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  @media (max-width: 1200px) {
-    font-size: 50px;
-    line-height: 81px;
-  }
-  @media (max-width: 1400px) {
-    font-size: 60px;
-    line-height: 81px;
-  }
+
   @media (min-width: 1500px) {
     width: 100%;
     max-width: 100%;
     padding: 0;
-    font-size: 80px;
   }
-  /* @media (max-width: 1400px) {
+
+  @media (max-width: 1400px) {
+    font-size: 75px;
+    line-height: 90px;
+  }
+
+  @media (max-width: 1200px) {
     font-size: 60px;
-  } */
+    line-height: 80px;
+  }
+
+  @media (max-width: 1050px) {
+    top: 10px;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+  }
+
+  @media (max-width: 950px) {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 45px;
+    line-height: 60px;
+  }
 `;
 export const SlideTitleStrong = styled.span`
   font-family: "Plus Jakarta Sans";
@@ -332,6 +344,7 @@ export const SlideTitleStrong = styled.span`
   letter-spacing: 2px;
   color: ${({ color }) => color};
   padding: 7px 0px 0px 0px;
+
   :before {
     content: "";
     width: 110px;
@@ -340,41 +353,74 @@ export const SlideTitleStrong = styled.span`
     position: absolute;
     background-color: ${({ color }) => color};
   }
+
+  @media (max-width: 1050px) {
+    font-size: 40px;
+    line-height: 50px;
+    :before {
+      content: "";
+      margin-top: 90px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    font-size: 40px;
+    line-height: 50px;
+    :before {
+      content: "";
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+    line-height: 50px;
+    :before {
+      content: "";
+      margin-top: 70px;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 75px;
+    line-height: 90px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
     left: 0;
-    font-size: 3em;
   }
-  @media (max-width: 950px) {
-    font-size: 40px;
-    line-height: 50px;
-    padding: 0px 0 0 10px;
-    :before {
-      content: "";
 
-      margin-top: 80px;
-    }
+  @media (max-width: 950px) {
+    font-size: 55px;
+    line-height: 70px;
   }
-  @media (max-width: 1200px) {
-    font-size: 50px;
-    line-height: 81px;
+
+  @media (max-width: 500px) {
+    font-size: 45px;
+    line-height: 60px;
   }
-  @media (max-width: 1400px) {
-    font-size: 60px;
-    line-height: 81px;
-  }
+
+
   /* @media (max-width: 1400px) {
     font-size: 3em;
     :before {
       margin-top: 75px;
     }
   } */
-  @media (min-width: 1500px) {
-    width: 100%;
-    max-width: 100%;
-    font-size: 80px;
-  }
+
+  
 `;
 
 export const SliderGroupCaption = styled.div`
@@ -404,29 +450,31 @@ export const SlideTextParagraph = styled.text`
   padding: 20px 40px 0px 0px;
   max-width: 100%;
 
-  @media (max-width: 950px) {
-    font-size: 20px;
-    padding: 20px 0 0 10px;
+  @media (min-width: 1500px) {
+    font-size: 24px;
   }
-  @media (max-width: 1200px) {
-    font-size: 22px;
-    padding-top: 40px;
-  }
+
   @media (min-width: 1400px) {
     font-size: 24px;
     padding-top: 20px;
   }
-  @media (min-width: 1500px) {
-    font-size: 24px;
+
+  @media (max-width: 1200px) {
+    font-size: 22px;
+    padding-top: 40px;
   }
 
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
-    padding: 20px 0 0 10px;
+    padding: 20px 0 0 0;
     left: 0;
     top: 0;
     font-size: 18px;
+  }
+
+  @media (max-width: 950px) {
+    font-size: 20px;
   }
 `;
 

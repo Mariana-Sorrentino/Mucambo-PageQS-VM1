@@ -20,16 +20,18 @@ export default function BlockSeparationsTitleS({
 }) {
   return (
     <ContainerSeparationGreen>
-    <TitlePage active={active} color={color}>
-      <TitleInit viewLargura={viewLargura}>
-        <InitTitle colorTitle={colorTitle}>{ReactHtmlParser(title)}</InitTitle>
-      </TitleInit>
-      <TitleDescription viewDisplay={viewDisplay}>
-        <Paragraph colorTitle={colorTitle}>
-          {ReactHtmlParser(description)}
-        </Paragraph>
-      </TitleDescription>
-    </TitlePage>
+      <TitlePage active={active} color={color}>
+        <TitleInit viewLargura={viewLargura}>
+          <InitTitle colorTitle={colorTitle}>
+            {ReactHtmlParser(title)}
+          </InitTitle>
+        </TitleInit>
+        <TitleDescription viewDisplay={viewDisplay}>
+          <Paragraph colorTitle={colorTitle}>
+            {ReactHtmlParser(description)}
+          </Paragraph>
+        </TitleDescription>
+      </TitlePage>
     </ContainerSeparationGreen>
   );
 }

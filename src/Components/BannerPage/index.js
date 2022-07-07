@@ -8,14 +8,25 @@ import {
   SeparaPages,
   TitlePages,
   SectorEncontrar,
+  Lentes,
+  ContainerBrandcumb,
+  List,
+  Title,
+  TitleStrong,
 } from "./styles";
 
-export default function BannerPage({ bannersPages }) {
+export default function BannerPage({ bannersPages, sub, product, active }) {
   console.log(bannersPages);
   return (
     <React.Fragment>
       {/*  {bannersPages.map((item) => ( */}
       <ContainerBanner /* key={item.id} */ background={bannersPages.image}>
+        <Lentes>
+          <List>
+            <Title>Home</Title> | <Title>{sub} </Title>
+            <TitleStrong> {product}</TitleStrong>
+          </List>
+        </Lentes>
         <OndeEncontrar>
           {/* <OndeEncontrarImg /> */}
           <SectorEncontrarTitle>

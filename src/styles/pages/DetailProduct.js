@@ -549,7 +549,7 @@ export const ItemInstruct = styled.div`
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
-    padding: 5px;
+    padding: 15px;
   }
 `;
 export const CategoryInstruction = styled.span`
@@ -567,7 +567,7 @@ export const CategoryInstruction = styled.span`
   @media (max-width: 950px) {
     font-size: 25px;
     line-height: 28px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 `;
 
@@ -617,9 +617,11 @@ export const SectorPDF = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 950px) {
+    height: auto;
     justify-content: center;
     font-size: 14px;
     line-height: 33px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -661,7 +663,8 @@ export const TitlePDF = styled.span`
   max-width: 300px;
   margin-right: 20px;
   @media (max-width: 950px) {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 33px;
+    text-align: center;
   }
 `;

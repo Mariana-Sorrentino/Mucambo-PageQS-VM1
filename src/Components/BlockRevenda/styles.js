@@ -12,7 +12,6 @@ export const TestsSectorRevenda = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   background-position: center;
-
   margin: 10px 0 10px 0;
   background-color: #fafbff;
   @media (max-width: 1050px) {
@@ -27,18 +26,22 @@ export const CardTxt = styled.div`
   max-width: 100%;
   height: auto;
   min-height: 120px;
-
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+  }
+  @media (max-width: 950px) {
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const SectorsTexts = styled.span`
@@ -52,23 +55,15 @@ export const SectorsTexts = styled.span`
   letter-spacing: 1px;
   text-align: flex-start;
   color: var(--colorAzulclaro);
-  font-family: "Plus Jakarta Sans";
-
-  /* or 133% */
-
   text-align: center;
   letter-spacing: -0.02em;
 
-  @media (max-width: 1250px) {
-    margin-left: 10%;
-  }
   @media (max-width: 950px) {
-    padding: 20px;
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     font-size: 22px;
-    margin-left: 1%;
+    line-height: 32px;
   }
 `;
 // bloco input buscar select
@@ -81,9 +76,17 @@ export const DivSeahchimSelected = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     max-width: 90%;
-
+    height: 50px;
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
+    height: 50px;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+    max-width: 100%;
     height: 50px;
   }
 `;
@@ -129,12 +132,22 @@ export const DroSeletsF = styled.select`
   /* padding: 12px 55px 15px 15px; */
   font-size: 18px;
   color: #7f8282;
-  font-family: "Poppins";
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 51px;
   padding-left: 5px;
+  @media (max-width: 950px) {
+    max-width: 300px;
+  }
+  @media (max-width: 600px) {
+    max-width: 300px;
+  }
+  @media (max-width: 450px) {
+    max-width: 280px;
+  }
 `;
+
 export const SelectsOptions = styled.option`
   height: 50px !important;
   padding: 12px 55px 15px 15px;
@@ -462,6 +475,8 @@ export const Mapas = styled.div`
     width: 100%;
     max-width: 100%;
     margin-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     #LocalizaMap {
       max-width: 100%;
     }

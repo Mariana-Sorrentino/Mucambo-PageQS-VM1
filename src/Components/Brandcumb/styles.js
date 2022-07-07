@@ -12,7 +12,6 @@ export const ContainerBrandcumb = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: var(--colorCategory);
-
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;

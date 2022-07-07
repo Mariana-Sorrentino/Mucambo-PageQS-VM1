@@ -7,6 +7,7 @@ import {
   Socialfooter,
   Logofooter,
   Logoimg,
+  AllinContacts,
   TesteB,
 } from "./styles";
 import Link from "next/link";
@@ -28,19 +29,19 @@ export default function BlockSociety({ appData }) {
     },
     {
       id: 2,
-      url: "#",
+      url: "/contato",
       title: "Contato",
       done: true,
     },
     {
       id: 3,
-      url: "#",
+      url: "https://privacy.newellbrands.com/cookie_pt.html",
       title: "Política de Cookies",
       done: true,
     },
     {
       id: 4,
-      url: "#",
+      url: "https://privacy.newellbrands.com/index_pt.html",
       title: "Privacidade",
       done: true,
     },
@@ -51,19 +52,6 @@ export default function BlockSociety({ appData }) {
       description: "Tecnologia e proteção para quem mais entende de saúde.",
       done: true,
     },
-    {
-      id: 6,
-      url: "#",
-      title: "SAC: 0800 0754638  |  +55 11 2133.3000",
-      description: "Tecnologia e proteção para quem mais entende de saúde.",
-      done: true,
-    },
-    {
-      id: 7,
-      url: "#",
-      title: "Siga-nos:",
-      done: true,
-    },
   ];
 
   return (
@@ -72,43 +60,41 @@ export default function BlockSociety({ appData }) {
         {footerfake != null &&
           footerfake.map(function (itens) {
             return (
-              <Link key={itens.id} href={`/${itens.url}`}>
-                <AllinkA href={`/${itens.url}`}>
+              <Link key={itens.id} href={`${itens.url}`} target="_blank">
+                <a target="_blank">
                   <Allink key={itens.id}>{itens.title}</Allink>
-                </AllinkA>
+                </a>
               </Link>
             );
           })}
+        <AllinContacts key="Siga">
+          SAC: 0800 0754638 | +55 11 2133.3000
+        </AllinContacts>
+        <AllinContacts key="Siga">Siga-nos:</AllinContacts>
         <Socialfooter>
           <React.Fragment>
             <Link href={appData.company.facebook}>
               <a target="_blank" id="socialy">
                 <i id={`IconsM`}>
-                  <AiFillFacebook
-                    style={{
-                      fontSize: 25,
-                      color: "#fff",
-                    }}
-                  />
+                  <AiFillFacebook id="socialIcons" />
                 </i>
               </a>
             </Link>
             <Link href={appData.company.instagram}>
               <a target="_blank" id="socialy">
                 <i id={`IconsM`}>
-                  <AiFillInstagram
-                    style={{
-                      fontSize: 25,
-                      color: "#fff",
-                    }}
-                  />
+                  <AiFillInstagram id="socialIcons" />
                 </i>
               </a>
             </Link>
           </React.Fragment>
         </Socialfooter>
         <Logofooter>
-          <Logoimg src="/image/newellfooter.svg" />
+          <Link href="https://www.newellbrands.com/">
+            <a target="_blank">
+              <Logoimg src="/image/newellfooter.svg" />
+            </a>
+          </Link>
         </Logofooter>
       </FooterNave>
       {/* <TesteB

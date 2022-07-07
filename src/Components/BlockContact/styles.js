@@ -286,7 +286,7 @@ export const RightTextsParagraph = styled.p`
   color: var(--colorBclak);
   @media (min-width: 1500px) {
     width: 100%;
-    max-width: 100%;
+    max-width: 97%;
     flex-wrap: wrap;
     /* padding: 10px 0 0 10px; */
   }

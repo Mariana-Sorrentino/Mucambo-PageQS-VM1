@@ -1,0 +1,16 @@
+
+Mucambo - AJUSTES
+
+HOME :
+
+- Foto do Banner (trocou uma delas)
+
+- BlockCard 
+
+- Blockgloves
+
+- Blockglovescomplement
+
+- BlockSocietyenvironment
+
+- SliderCirurgic (fontes)

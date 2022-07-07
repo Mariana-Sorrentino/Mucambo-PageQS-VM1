@@ -12,6 +12,7 @@ export const ContainerGloves = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #fafbff;
+
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
@@ -62,12 +63,14 @@ export const GlovesTitle = styled.div`
   height: auto;
   max-width: 100%;
   min-height: 230px;
+  padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--colorTxtNav);
   margin-top: 50px;
-  @media (max-width: 950px) {
+
+  @media (max-width: 600px) {
     width: 100%;
     max-width: 100%;
     justify-content: center;
@@ -87,7 +90,7 @@ export const TitleBlock = styled.span`
   font-weight: 500;
   letter-spacing: 4px;
   /* background-color: red; */
-  padding: 7px 0 0 0;
+  padding: 7px 0 20px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -95,43 +98,145 @@ export const TitleBlock = styled.span`
   :before {
     content: "";
     width: 100%;
-    max-width: 75%;
+    max-width: 65%;
     height: 2px;
-    margin-left: 25%;
+    margin-left: 35%;
     /* left: 0; */
     position: absolute;
     background-color: var(--colorDefault);
   }
-  @media (max-width: 950px) {
+
+  @media (max-width: 600px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     padding: 0;
     text-align: center;
     justify-content: center;
+    padding-bottom: 80px;
   }
-  @media (max-width: 1100px) {
+
+  @media (max-width: 1175px) {
     :before {
       content: "";
       width: 100%;
-      max-width: 20%;
+      max-width: 62%;
+      margin-left: 38%;
+    }
+  }
+
+  @media (max-width: 1060px) {
+    :before {
+      content: "";
+      width: 100%;
+      max-width: 58%;
+      margin-left: 42%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    :before {
+      content: "";
+      width: 100%;
+      max-width: 53%;
+      margin-left: 46%;
+    }
+  }
+
+  @media (max-width: 880px) {
+    :before {
+      content: "";
+      width: 100%;
+      max-width: 48%;
+      margin-left: 50%;
+    }
+  }
+
+  @media (max-width: 810px) {
+    :before {
+      content: "";
+      max-width: 45%;
+      margin-left: 55%;
+    }
+  }
+
+  @media (max-width: 740px) {
+    :before {
+      content: "";
+      max-width: 40%;
+      margin-left: 60%;
+    }
+  }
+
+  @media (max-width: 670px) {
+    :before {
+      content: "";
+      max-width: 35%;
+      margin-left: 65%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    :before {
+      content: "";
+      max-width: 33%;
+      margin-left: 68%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    :before {
+      content: "";
+      width: 100%;
+      max-width: 55%;
       top: 70px;
       margin-left: 0;
     }
   }
+
+  @media (max-width: 414px) {
+    :before {
+      content: "";
+      width: 100%;
+      max-width: 60%;
+      top: 110px;
+      margin-left: 0;
+    }
+  }
 `;
+
 export const GlovesFlay = styled.div`
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
   min-height: 600px;
+  padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fafbff;
-  @media (max-width: 950px) {
+
+  @media (max-width: 1150px) {
+    max-width: 70%;
+  }
+
+  @media (max-width: 1115px) {
+    max-width: 80%;
+  }
+
+  @media (max-width: 975px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    max-width: 70%;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 500px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -151,7 +256,12 @@ export const CardFaly = styled.div`
   /* background-color: red; */
   margin-top: -60px;
   z-index: 1;
-  @media (max-width: 950px) {
+
+ @media (max-width: 866px) {
+    justify-content: space-around;
+  }
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -169,19 +279,19 @@ export const Card = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: var(--colorDefault);
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
+  
   cursor: pointer;
   /* margin-left: 10px; */
-  @media (max-width: 950px) {
-    width: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     margin: 10px;
   }
 `;
+
 export const CardPhoto = styled.div`
   position: relative;
   width: 100%;
@@ -193,7 +303,7 @@ export const CardPhoto = styled.div`
   align-items: center;
   background-color: #ededed;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -209,12 +319,19 @@ export const CardImg = styled.img`
   background-size: cover;
   background-position: center;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
+    width: 100%;
+    max-width: 80%;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 650px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
   }
 `;
+
 export const CardItem = styled.div`
   position: relative;
   width: 100%;
@@ -227,7 +344,7 @@ export const CardItem = styled.div`
   flex-direction: column;
   background-color: #ffffff;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -245,7 +362,7 @@ export const CardTag = styled.div`
   background-color: var(--azulpadrao);
   margin: 10px 0 0px 0px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -264,7 +381,7 @@ export const CardTagTitleItem = styled.div`
   font-size: 16px;
   color: var(--colorDefault);
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -283,7 +400,8 @@ export const CardTagCategory = styled.div`
   background-color: #e5e5e5;
   font-size: 16px;
   color: var(--azulpadrao);
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -299,6 +417,7 @@ export const CardTxt = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--colorDefault);
+
   ::after {
     content: "";
     width: 100%;
@@ -309,7 +428,7 @@ export const CardTxt = styled.div`
     position: absolute;
     background-color: var(--colorTxtNav);
   }
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -332,7 +451,8 @@ export const Contents = styled.div`
   background-color: #ffffff;
   font-size: 16px;
   color: var(--bgAmarelo);
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -348,7 +468,7 @@ export const ContentsTitles = styled.span`
   font-weight: 400;
   color: var(--colorBclak);
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -372,7 +492,7 @@ export const News = styled.div`
   background-color: #ffffff;
   font-size: 16px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -392,11 +512,13 @@ export const Icons = styled.div`
   font-size: 16px;
   color: var(--azulpadrao);
   bottom: 0;
+
   :hover {
     background-color: var(--azulpadrao);
     color: var(--colorDefault);
   }
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -414,7 +536,8 @@ export const NavigationCard = styled.div`
   background-color: transparent;
   margin-top: 60px;
   z-index: 1;
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;

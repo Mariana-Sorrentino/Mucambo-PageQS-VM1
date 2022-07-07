@@ -69,15 +69,17 @@ export default function Product({ appData, productData, relatedsData }) {
   return (
     <SiteLayout appData={appData}>
       <ContainerDetalheProd>
-        <BrandCategory
+        {/* <BrandCategory
           sub="Produtos | "
           product={productData.category.group.title}
-        />
+        /> */}
         <BannerPage
           bannersPages={{
             image: productData.category.group.image,
             titlePage: productData.category.group.title,
           }}
+          sub="Produtos | "
+          product={productData.category.group.title}
         />
         <PageNames title={productData.category.group.title} />
         {/* detalhe produto initial */}

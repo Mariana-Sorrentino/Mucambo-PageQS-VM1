@@ -33,7 +33,7 @@ export default function Blockgloves() {
         <TitleProduct>Nossos Produtos</TitleProduct>
       </GlovesProduct> */}
       <GlovesTitle>
-        <TitleBlock>Linha Cirúrgica</TitleBlock>
+        <TitleBlock>Linha Complementar</TitleBlock>
       </GlovesTitle>
       <GlovesFlay>
         <CardFaly>

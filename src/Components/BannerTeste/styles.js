@@ -6,22 +6,90 @@ export const ContainerBanner = styled.div`
   width: 100%;
   height: auto;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 460px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-image: url(${({ background }) => background});
+
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
-  margin-top: 0px;
+  object-fit: cover;
+  background-attachment: inherit;
+
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+  top: 0px;
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
   }
 `;
+//BRANDTESTES
+export const Lentes = styled.div`
+  position: relative;
+  z-index: 99999;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f5f5f5d1;
+  @media (max-width: 950px) {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+`;
+export const List = styled.div`
+  position: relative;
+  left: 290px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red; */
+  @media (max-width: 950px) {
+    display: flex;
+    flex-wrap: wrap;
+    left: 10px;
+  }
+`;
+export const Title = styled.span`
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+  /* padding: 0px 19px 0 16px; */
+  padding: 0 10px 0 4px;
+  font-size: 14px;
+
+  color: var(--colorTxtNav);
+
+  @media (max-width: 950px) {
+    font-size: 14px;
+  }
+`;
+export const TitleStrong = styled.strong`
+  font-size: 14px;
+  padding: 0 0 0 1px;
+  color: var(--colorBclak);
+
+  @media (max-width: 950px) {
+    font-size: 14px;
+  }
+`;
+//FINAL BRAND
 
 export const OndeEncontrar = styled.div`
   position: relative;

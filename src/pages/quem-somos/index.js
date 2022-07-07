@@ -1,23 +1,16 @@
 import React from "react";
 import { ContainerQuemSomos } from "src/styles/pages/QuemSomos";
-
-import BlocksGloves from "src/Components/Blockgloves";
-
 import SiteLayout from "src/layouts/site";
-import BrandCategory from "src/Components/Brandcumb";
-
-import BlockPostLeft from "src/Components/BlockPostLeft";
 import BlockLeftQuemSomos from "src/Components/BlockLeftQuemSomos";
 import BlockSecuryti from "src/Components/BlockSecuryti";
 import API from "src/services/api";
 import BlockForm from "src/Components/BlockForm";
 import SeparationPage from "src/Components/BlockSeparationsQS";
-import BlockPortfolio from "src/Components/BlockPortfolio"
 import BlockRightQuemSomos from "src/Components/BlockRightQuemSomos";
-import About from "src/Components/BlockAbout"
 import BannerPage from "src/Components/BannerTeste";
 import PageNames from "src/Components/BlockTitlePage";
-
+import BlockPortfolio from "src/Components/BlockPortfolio";
+import About from "src/Components/BlockAbout";
 export async function getServerSideProps(ctx) {
   const { data } = await API.get("site/pages/by-url/quem-somos");
   return {
@@ -30,11 +23,12 @@ export default function QuemSomos({ appData }) {
     <React.Fragment>
       <SiteLayout appData={appData}>
         <ContainerQuemSomos>
-          <BrandCategory product="Quem Somos" />
+          {/* <BrandCategory product="Quem Somos" /> */}
           <BannerPage
             img="/image/PageView/bannerQuemSomos.svg"
             title=""
             subtitle=""
+            product="Quem Somos"
           />
           <PageNames title="Quem Somos" />
           <BlockLeftQuemSomos />
@@ -54,7 +48,6 @@ export default function QuemSomos({ appData }) {
           <BlockPortfolio />
           <BlockRightQuemSomos />
           <About />
-
           <SeparationPage
             active={false}
             viewLargura={false}
@@ -62,7 +55,7 @@ export default function QuemSomos({ appData }) {
             color="#1951A0"
             colorTitle="#fff"
             title="<strong>Para levar toda a qualidade das luvas Mucambo à 
-            sua clínica ou hospital,</strong> fale com nossos especialistas."        
+            sua clínica ou hospital,</strong> fale com nossos especialistas."
           />
           {/* <BlockSecuryti /> */}
         </ContainerQuemSomos>

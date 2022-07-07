@@ -49,13 +49,15 @@ export default function ProductCategory({ appData, groupData }) {
     <React.Fragment>
       <SiteLayout appData={appData}>
         <ContainerProduct>
-          <BrandCategory sub="Produtos | " product={groupData.title} />
+          {/* <BrandCategory sub="Produtos | " product={groupData.title} /> */}
 
           <BannerPage
             bannersPages={{
               image: groupData.image,
               titlePage: groupData.title,
             }}
+            sub="Produtos | "
+            product={groupData.title}
           />
 
           {groupData.categories.map((category) => {

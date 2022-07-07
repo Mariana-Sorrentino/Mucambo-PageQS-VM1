@@ -14,21 +14,17 @@ export const ContainerMaster = styled.div`
   align-items: flex-end;
   background-color: var(--bgpadrao);
   /* background-color: #ffff8077; */
-
   @media (max-width: 950px) {
-    min-height:auto;
+    min-height: auto;
     padding-top: 40px;
   }
-
   @media (max-width: 500px) {
     min-height: auto;
     padding-top: 0px;
   }
-
   @media (max-width: 450px) {
     margin-bottom: -30px;
   }
-
   @media (max-width: 365px) {
     margin-bottom: -50px;
   }
@@ -44,7 +40,6 @@ export const CardPost = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   /* background-color: #80004066; */
-
   @media (max-width: 950px) {
     width: 100%;
     flex-wrap: wrap;
@@ -63,16 +58,13 @@ export const CardLeft = styled.div`
   align-items: center;
   flex-direction: column;
   /* background-color: #ffff95; */
-
   @media (max-width: 950px) {
     justify-content: center;
     margin-bottom: 25px;
   }
-
   @media (max-width: 420px) {
     margin-top: -30px;
   }
-
   @media (max-width: 330px) {
     margin-top: -50px;
   }
@@ -98,23 +90,19 @@ export const CardRight = styled.div`
   align-items: center;
   flex-direction: column;
   /* background-color: #c1006155; */
-
   @media (max-width: 950px) {
     padding-left: 0px;
     max-width: 80%;
     min-height: auto;
   }
-
   @media (max-width: 600px) {
     max-width: 100%;
   }
-
   @media (max-width: 450px) {
-  bottom: 30px;
+    bottom: 30px;
   }
-
   @media (max-width: 365px) {
-  bottom: 50px;
+    bottom: 50px;
   }
 `;
 
@@ -130,7 +118,6 @@ export const RightTexts = styled.div`
   flex-direction: column;
   position: relative;
   text-align: start;
-
   @media (max-width: 950px) {
     justify-content: flex-start;
   }
@@ -145,7 +132,6 @@ export const RightTitles = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-
   @media (min-width: 1500px) {
     flex-wrap: wrap;
   }
@@ -160,7 +146,6 @@ export const RightTextsTitle = styled.span`
   /* identical to box height, or 105% */
   letter-spacing: -0.03em;
   color: #238ec2;
-
   /* background-color: blue; */
   :after {
     content: "";
@@ -171,19 +156,15 @@ export const RightTextsTitle = styled.span`
     left: 1px;
     position: absolute;
     background-color: #238ec2;
-    
   }
-
   @media (max-width: 1260px) {
     font-size: 38px;
     width: 100%;
     flex-wrap: wrap;
   }
-
   @media (max-width: 950px) {
     font-size: 35px;
   }
-
   @media (max-width: 800px) {
     font-size: 30px;
   }
@@ -200,15 +181,12 @@ export const RightTextsParagraph = styled.p`
   color: var(--colorBclak);
   /* background-color: #ff9dce; */
   margin-bottom: -2px;
-
   @media (max-width: 1200px) {
     max-width: 100%;
   }
-
   @media (max-width: 1120px) {
     font-size: 15px;
   }
-
   @media (max-width: 500px) {
     font-size: 14px;
   }

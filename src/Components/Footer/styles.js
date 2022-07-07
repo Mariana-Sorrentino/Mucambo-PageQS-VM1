@@ -30,6 +30,32 @@ export const FooterNave = styled.div`
   @media (max-width: 1100px) {
     max-width: 100%;
     min-height: 100px;
+    padding: 40px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 950px) {
+      font-size: 12px;
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (max-width: 1100px) {
+      font-size: 12px;
+    }
+    @media (min-width: 1400px) {
+      font-size: 16px;
+    }
   }
 `;
 export const AllinkA = styled.a`
@@ -52,7 +78,13 @@ export const AllinkA = styled.a`
   }
 `;
 export const Allink = styled.span`
-  font-family: "Poppins";
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +97,7 @@ export const Allink = styled.span`
   border-radius: 20px;
   padding: 0 10px;
   :hover {
-    color: var(--colorBclak);
+    color: var(--azulpadrao);
     transition: 0.3s ease-out;
   }
   /* @media (min-width: 1100px) {
@@ -96,10 +128,19 @@ export const Socialfooter = styled.div`
     justify-content: center;
     align-items: center;
   }
+  #socialIcons {
+    font-size: 40px;
+    color: #fff;
+    border-radius: 30px;
+    :hover {
+      color: var(--azulpadrao);
+    }
+  }
 
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
+    margin-top: 20px;
     #socialy {
       width: 100%;
       max-width: 20%;
@@ -110,7 +151,28 @@ export const Socialfooter = styled.div`
     max-width: 100%;
   }
 `;
+export const AllinContacts = styled.span`
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  height: 40px;
+  color: var(--colorDefault);
+  padding: 0 10px;
+  @media (max-width: 950px) {
+    width: 100%;
+    max-width: 100%;
+  }
+`;
 export const Logofooter = styled.div`
   width: 100%;
   max-width: 150px;
@@ -128,6 +190,12 @@ export const Logofooter = styled.div`
     width: 100%;
     max-width: 100%;
     margin: 10px;
+  }
+  a {
+    width: 100%;
+    max-width: 100%;
+
+    padding-left: 10px;
   }
 `;
 export const Logoimg = styled.img`

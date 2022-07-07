@@ -2,7 +2,6 @@ import React from "react";
 import { ComponentFull, ComponentPage } from "src/styles/PadaoPage";
 import {
   ContainerMaster,
-
   GlovesTitle,
   CardPost,
   CardLeft,
@@ -46,19 +45,17 @@ export default function BlockRightQuemSomos() {
             </RightTexts>
             <Descriptions>
               <RightTextsParagraph>
-                <strong>
-                A história da Mucambo começa no ano de 1950 
-                </strong> e tem como ponto de partida uma fábrica localizada em 
-                território baiano e a missão de oferecer mais qualidade
-                 e segurança aos profissionais da saúde de todo o país.
+                <strong>A história da Mucambo começa no ano de 1950</strong> e
+                tem como ponto de partida uma fábrica localizada em território
+                baiano e a missão de oferecer mais qualidade e segurança aos
+                profissionais da saúde de todo o país.
               </RightTextsParagraph>
 
               <RightTextsParagraph>
-                Com o passar do tempo, o crescimento das operações e 
-                o aumento no número de produtos comercializados, a 
-                trajetória da empresa tomou novos rumos e sua linha 
-                do tempo passou a ser sinalizada por dois marcos 
-                muito importantes:
+                Com o passar do tempo, o crescimento das operações e o aumento
+                no número de produtos comercializados, a trajetória da empresa
+                tomou novos rumos e sua linha do tempo passou a ser sinalizada
+                por dois marcos muito importantes:
               </RightTextsParagraph>
             </Descriptions>
           </CardRight>
@@ -72,26 +69,28 @@ export default function BlockRightQuemSomos() {
         <CardBotton>
           <CardRight>
             <CardTextBotton>
-              <Year><strong>1999</strong></Year>
+              <Year>
+                <strong>1999</strong>
+              </Year>
               <TextBotton>
                 <strong>
-                  A Mucambo foi incorporada à companhia francesa
-                  Mapa Spontex.
+                  A Mucambo foi incorporada à companhia francesa Mapa Spontex.
                 </strong>
               </TextBotton>
-            </CardTextBotton>            
+            </CardTextBotton>
           </CardRight>
 
           <CardRight>
             <CardTextBotton>
-              <Year><strong>2016</strong></Year>
+              <Year>
+                <strong>2016</strong>
+              </Year>
               <TextBotton>
                 <strong>
-                Passou a fazer parte do grupo norte-americano
-                Newell Brands.
+                  Passou a fazer parte do grupo norte-americano Newell Brands.
                 </strong>
               </TextBotton>
-            </CardTextBotton>            
+            </CardTextBotton>
           </CardRight>
         </CardBotton>
       </BlockBotton>

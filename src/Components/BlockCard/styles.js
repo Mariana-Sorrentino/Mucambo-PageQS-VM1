@@ -5,7 +5,8 @@ export const TestsSectorPage = styled.div`
   width: 100%;
   max-width: 100%;
   height: auto;
-  min-height: 500px;
+  min-height: 453px;
+  padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +18,7 @@ export const TestsSectorPage = styled.div`
   background-size: cover;
   margin: 10px 0 10px 0;
   background-color: var(--colorDefault);
+  
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
@@ -28,14 +30,14 @@ export const CardTxt = styled.div`
   width: 100%;
   max-width: 1200px;
   height: auto;
-  min-height: 120px;
-  /* background-color: red; */
+  /* background-color: #00d2d255; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 25px;
   padding-bottom: 15px;
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
@@ -46,27 +48,26 @@ export const CardTxt = styled.div`
 export const SectorsTexts = styled.span`
   width: 100%;
   max-width: 100%;
-  /* margin-left: 16%; */
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 52px;
-
   letter-spacing: -0.03em;
-
   text-align: flex-start;
   color: var(--azulpadrao);
 
   @media (max-width: 1250px) {
     margin-left: 0;
   }
+
   @media (max-width: 950px) {
     padding: 20px;
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 40px;
   }
 `;
 export const Paragraph = styled.span`
@@ -76,19 +77,21 @@ export const Paragraph = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
-  max-width: 51%;
+  max-width: 75%;
   /* margin-left: 16%; */
   padding: 10px 0px 20px 0px;
   color: var(--colorBclak);
   font-weight: 20;
   text-align: flex-start;
+
   @media (max-width: 1250px) {
     margin-left: 0;
   }
+
   @media (max-width: 950px) {
     padding: 20px;
     width: 100%;
-    max-width: 98%;
+    max-width: 100%;
     flex-wrap: wrap;
     font-size: 16px;
   }
@@ -96,17 +99,17 @@ export const Paragraph = styled.span`
     color: #000;
   }
 `;
+
 export const SectorsCards = styled.div`
-  /* width: 100%;
-  max-width: 60%;*/
   width: 100%;
   max-width: 1200px;
-  /* background-color: red; */
+  /* background-color: #00800055; */
   height: auto;
-  min-height: 350px;
+  min-height: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 100%;
@@ -117,34 +120,29 @@ export const SectorsCards = styled.div`
 
 export const Card = styled.div`
   width: 100%;
-  /* margin-right: 50px; */
-  max-width: 270px;
-  height: 300px;
-  min-height: 300px;
-  /* background-color: blue; */
-
-  /* width: 100%;
-  max-width: 300px;
-  height: 300px;
-  min-height: 300px;
-  background-color: transparent; */
+  max-width: 227px;
+  height: auto;
+  min-height: 220px;
+  max-height: 220px;
+  /* background-color: #0000a055; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-radius: 20px;
+  overflow: hidden;
   /* box-shadow: 0px 0px 50px #d2d2d289; */
   /* margin: 5px; */
   /* box-shadow: rgb(144 131 131 / 54%) 0px 0px 50px; */
+  
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 270px;
     height: 300px;
     flex-wrap: wrap;
-
     margin-top: 10px;
   }
 `;
+
 export const SectorImgCard = styled.div`
   width: 100%;
   max-width: 100%;
@@ -164,6 +162,8 @@ export const CardImages = styled.img`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  
+
   @media (max-width: 1050px) {
     width: 100%;
     max-width: 55px;
@@ -189,7 +189,7 @@ export const CardFullTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
+  /* background-color: #0080c055; */
 
   text-align: center;
 `;
@@ -202,9 +202,9 @@ export const CardTitle = styled.span`
   width: 100%;
   max-width: 100%;
   margin-top: 0px;
-  margin-left: 5px;
+  /* margin-left: 5px;
   margin-right: 5px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px; */
   color: var(--azulpadrao);
   text-align: center;
 
@@ -213,7 +213,6 @@ export const CardTitle = styled.span`
     margin-top: 0px;
     margin-left: 2px;
     margin-right: 2px;
-
     padding: 1px;
   }
 `;
@@ -225,9 +224,8 @@ export const CardParagraph = styled.span`
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-
   width: 100%;
-  max-width: 76%;
+  max-width: 86%;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;

@@ -41,16 +41,17 @@ export default function MeioAmbiente({ appData }) {
       <SiteLayout appData={appData}>
         <ContainerMeioAmbiente>
           {/* Initial compnents imports */}
-          <BrandCategory product="Meio Ambiente" />
+          {/* <BrandCategory product="Meio Ambiente" /> */}
           {/* <BannerPage
             bannersPages={appData.pages.filter(
               (item) => item.title === "meio-ambiente"
             )}
           /> */}
           <BannerPage
-            img="/image/PageView/MeioambientePage.svg"
+            img="/image/PageView/MeioambientePage.png"
             title=""
             subtitle=""
+            product="Meio Ambiente"
           />
           {/* passar para componente se precisar */}
 

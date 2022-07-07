@@ -32,8 +32,12 @@ export default function Ondeencontrar({ appData }) {
     <React.Fragment>
       <SiteLayout appData={appData}>
         <ContainerOndeEncontrar>
-          <BrandCategory product="Onde Encontrar" />
-          <BannerTeste img="/image/PageView/LocationPage.svg" title="" />
+          {/* <BrandCategory product="Onde Encontrar" /> */}
+          <BannerTeste
+            img="/image/PageView/LocationPage.png"
+            title=""
+            product="Onde Encontrar"
+          />
           <PageNames title="Onde Encontrar" />
           <BlockRevenda agentsData={appData.contents.agents} />
         </ContainerOndeEncontrar>

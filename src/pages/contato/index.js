@@ -24,13 +24,17 @@ export default function Contato({ appData }) {
       <SiteLayout appData={appData}>
         <ContainerContato>
           {/* Initial compnents imports */}
-          <BrandCategory product="Contato" />
+          {/* <BrandCategory product="Contato" /> */}
           {/* <BannerPage
             bannersPages={appData.pages.filter(
               (item) => item.title === "Contato"
             )}
           /> */}
-          <BannerTeste img="/image/PageView/ContactPage.svg" title="" />
+          <BannerTeste
+            img="/image/PageView/ContactPage.svg"
+            title=""
+            product="Contato"
+          />
 
           <BlockContact />
 

@@ -115,7 +115,7 @@ export default function BlockRevenda({ agentsData }) {
             <SectorsTexts>Encontre um Vendedor ou Representante</SectorsTexts>
           </CardTxt>
           <SectorSwitch>
-            <span class="switch">
+            <span className="switch">
               <input
                 type="checkbox"
                 id="switcher"

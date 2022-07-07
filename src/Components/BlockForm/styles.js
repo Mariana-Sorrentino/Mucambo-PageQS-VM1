@@ -172,12 +172,10 @@ export const DescriptionAccet = styled.span`
   font-size: 14px;
   line-height: 21px;
   color: #676767;
-
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
     padding-right: 5px;
-    justify-content: flex-start;
   }
 `;
 export const CheckBox = styled.input`

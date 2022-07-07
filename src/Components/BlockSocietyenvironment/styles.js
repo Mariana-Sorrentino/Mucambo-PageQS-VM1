@@ -7,6 +7,7 @@ export const ContainerSociety = styled.div`
   height: auto;
   max-width: 100%;
   min-height: 500px;
+  padding: 0 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,6 +18,7 @@ export const ContainerSociety = styled.div`
   background-position: center;
   background-size: cover;
   margin-top: 50px;
+
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
@@ -37,12 +39,14 @@ export const Society = styled.div`
   justify-content: center;
   align-items: center;
   /* background-color: #fafbff; */
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
   }
 `;
+
 export const SocietyTitle = styled.div`
   position: relative;
   z-index: 3;
@@ -50,13 +54,15 @@ export const SocietyTitle = styled.div`
   height: auto;
   max-width: 760px;
   min-height: 113px;
+  padding: 0 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: var(--colorVerdeescuro);
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -73,6 +79,31 @@ export const TitleSociety = styled.span`
   line-height: 60px;
   text-align: center;
   color: var(--colorDefault);
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 615px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 22px;
+    line-height: 20px;
+  }
 `;
 
 export const TitleSocietyStrong = styled.span`
@@ -85,8 +116,38 @@ export const TitleSocietyStrong = styled.span`
   line-height: 60px;
   text-align: center;
   margin-left: 10px;
+  position: relative;
 
   color: ${({ color }) => color};
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 615px) {
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 544px) {
+    top: -15px;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 22px;
+    line-height: 20px;
+  }
 `;
 
 export const SocietyCards = styled.div`
@@ -101,10 +162,12 @@ export const SocietyCards = styled.div`
   justify-content: center;
   align-items: center;
   /* background-color: blue; */
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
+    padding: 20px 0 20px 0;
   }
 `;
 export const Cards = styled.div`
@@ -121,11 +184,11 @@ export const Cards = styled.div`
   background-color: var(--colorDefault);
   margin: 5px;
   /* 0px 5px 0px 5px; */
-  @media (max-width: 950px) {
+  
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
-    background-color: blue;
   }
 `;
 export const CardTag = styled.div`
@@ -139,7 +202,7 @@ export const CardTag = styled.div`
   align-items: center;
   background-color: var(--colorDefault);
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 20%;
     flex-wrap: wrap;
@@ -156,7 +219,7 @@ export const Icons = styled.div`
   align-items: center;
   background-color: #66b031;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
@@ -168,7 +231,7 @@ export const Iconphoto = styled.img`
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 40%;
     flex-wrap: wrap;
@@ -189,7 +252,7 @@ export const CardTagTitleItem = styled.div`
   font-size: 16px;
   color: var(--colorBclak);
 
-  @media (max-width: 950px) {
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 80%;
     flex-wrap: wrap;
@@ -202,16 +265,24 @@ export const Title = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
   position: relative;
   padding: 0 0 0 15px;
   font-size: 16px;
   color: var(--colorVerdeescuro);
   text-align: flex-start;
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 310px) {
+    font-size: 13px;
   }
 `;
 
@@ -225,7 +296,8 @@ export const NavigationCard = styled.div`
   align-items: center;
   background-color: transparent;
   z-index: 1;
-  @media (max-width: 950px) {
+
+  @media (max-width: 800px) {
     margin-top: 25px;
     margin-bottom: 10px;
     width: 100%;

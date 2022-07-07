@@ -94,6 +94,8 @@ export const SliderGroup = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
   @media (max-width: 950px) {
     top: 40px;
     height: auto;
@@ -122,6 +124,8 @@ export const SliderGroupPage = styled.div`
   /* background-color: red; */
   @media (max-width: 950px) {
     left: 0;
+    height: auto;
+  
   }
 `;
 

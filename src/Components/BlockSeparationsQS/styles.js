@@ -14,7 +14,6 @@ export const ContainerSeparationGreen = styled.div`
   align-items: center;
   background-color: var(--bgpadrao);
   /* background-color: #ffff8077; */
-
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
@@ -41,16 +40,13 @@ export const TitlePage = styled.div`
   border-radius: 10px;
   ${({ active }) => (active == true ? activeBgSlider : inactiveBgSlider)};
   background-color: ${({ color }) => color};
-
   /* color: var(--colortextverde); */
-
   @media (max-width: 780px) {
     min-height: 150px;
     padding: 10px 20px 10px 20px;
   }
-
   @media (max-width: 420px) {
-    padding:  20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     min-height: 170px;
   }
 `;
@@ -73,12 +69,8 @@ export const TitleInit = styled.div`
   justify-content: center;
   /* background-color: #0080c0; */
   align-items: center;
-
-  ${({ viewLargura }) => 
-    viewLargura == true
-      ? "max-width: 50%;"
-      : "max-width: 608px;"};
-
+  ${({ viewLargura }) =>
+    viewLargura == true ? "max-width: 50%;" : "max-width: 608px;"};
   @media (max-width: 780px) {
     width: 100%;
     max-width: 100%;
@@ -94,11 +86,9 @@ export const InitTitle = styled.span`
   line-height: 32px;
   text-align: center;
   color: ${({ colorTitle }) => colorTitle};
-
   @media (max-width: 1050px) {
     text-align: center;
   }
-
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
@@ -106,7 +96,6 @@ export const InitTitle = styled.span`
     font-size: 20px;
     padding-left: 10px;
   }
-
   @media (max-width: 780px) {
     text-align: center;
     padding-left: 0px;
@@ -114,7 +103,7 @@ export const InitTitle = styled.span`
 `;
 export const TitleDescription = styled.div`
   position: relative;
-   /* background-color: #ccc; */
+  /* background-color: #ccc; */
   width: 100%;
   height: auto;
   max-width: 50%;
@@ -123,17 +112,12 @@ export const TitleDescription = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
-  ${({ viewDisplay }) => 
-    viewDisplay == true
-      ? " display: flex;"
-      : " display: none;"};
-
+  ${({ viewDisplay }) =>
+    viewDisplay == true ? " display: flex;" : " display: none;"};
   @media (max-width: 780px) {
     max-width: 100%;
     padding-bottom: 20px;
   }
-
   @media (max-width: 680px) {
     max-width: 100%;
     padding-top: 20px;
@@ -150,14 +134,12 @@ export const Paragraph = styled.span`
   padding-right: 10px;
   /* color: var(--colorTexts); */
   color: ${({ colorTitle }) => colorTitle};
-
   @media (max-width: 950px) {
     width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     font-size: 14px;
   }
-
   @media (max-width: 780px) {
     text-align: center;
     line-height: 25px;
